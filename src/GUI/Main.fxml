@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="mainStack" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIControllers.MainController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="719.0" prefWidth="1252.0">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="8.0" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="57.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/angular.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="TRANS-NET">
+                           <font>
+                              <Font name="Century Gothic Bold" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Separator layoutX="4.0" layoutY="68.0" prefWidth="200.0" />
+                  <VBox layoutX="8.0" layoutY="85.0" prefHeight="200.0" prefWidth="190.0" spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: #F44336; -fx-background-radius: 5px;" stylesheets="@../Style/main.css">
+                           <children>
+                              <MaterialDesignIconView fill="WHITE" glyphName="VIEW_MODULE" size="25" wrappingWidth="35.0" />
+                              <Label prefHeight="28.0" prefWidth="154.0" text="Dash Bord" textFill="WHITE">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: WHITE; -fx-background-radius: 5px;" stylesheets="@../Style/main.css">
+                           <children>
+                              <AnchorPane prefHeight="25.0" prefWidth="20.0" />
+                              <FontAwesomeIconView glyphName="PLUS" size="25" wrappingWidth="27.0" />
+                              <Label fx:id="btn_CallNouveau" onMouseClicked="#Call_nouveau" prefHeight="28.0" prefWidth="168.0" text="Nouveau" textFill="#403f3f">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <StackPane fx:id="contenaire" layoutX="214.0" layoutY="69.0" prefHeight="632.0" prefWidth="790.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="248.0" AnchorPane.topAnchor="69.0" />
+            <AnchorPane layoutX="1011.0" layoutY="-6.0" prefHeight="725.0" prefWidth="241.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
