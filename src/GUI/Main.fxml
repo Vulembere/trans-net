@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <StackPane fx:id="mainStack" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIControllers.MainController">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="719.0" prefWidth="1252.0">
@@ -35,14 +34,14 @@
                      </children>
                   </HBox>
                   <Separator layoutX="4.0" layoutY="68.0" prefWidth="200.0" />
-                  <VBox layoutX="8.0" layoutY="85.0" prefHeight="200.0" prefWidth="190.0" spacing="15.0">
+                  <VBox layoutX="8.0" layoutY="85.0" prefHeight="341.0" prefWidth="190.0" spacing="15.0">
                      <children>
                         <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: #F44336; -fx-background-radius: 5px;" stylesheets="@../Style/main.css">
                            <children>
                               <MaterialDesignIconView fill="WHITE" glyphName="VIEW_MODULE" size="25" wrappingWidth="35.0" />
                               <Label prefHeight="28.0" prefWidth="154.0" text="Dash Bord" textFill="WHITE">
                                  <font>
-                                    <Font size="19.0" />
+                                    <Font name="Century Gothic" size="19.0" />
                                  </font>
                               </Label>
                            </children>
@@ -53,23 +52,69 @@
                         <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: WHITE; -fx-background-radius: 5px;" stylesheets="@../Style/main.css">
                            <children>
                               <AnchorPane prefHeight="25.0" prefWidth="20.0" />
-                              <FontAwesomeIconView glyphName="PLUS" size="25" wrappingWidth="27.0" />
-                              <Label fx:id="btn_CallNouveau" onMouseClicked="#Call_nouveau" prefHeight="28.0" prefWidth="168.0" text="Nouveau" textFill="#403f3f">
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="PLUS" size="25" wrappingWidth="27.0" />
+                              <Label fx:id="btn_CallNouveau" onMouseClicked="#Call_nouveau" prefHeight="28.0" prefWidth="168.0" text="   Nouveau" textFill="#403f3f">
                                  <font>
-                                    <Font size="19.0" />
+                                    <Font name="Century Gothic" size="19.0" />
                                  </font>
                               </Label>
                            </children>
                            <effect>
-                              <DropShadow />
+                              <DropShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: WHITE; -fx-background-radius: 5px;" stylesheets="@../Style/main.css">
+                           <children>
+                              <AnchorPane prefHeight="25.0" prefWidth="20.0" />
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="ROAD" size="25" wrappingWidth="27.0" />
+                              <Label fx:id="btn_CallNouveau1" onMouseClicked="#Call_nouveau" prefHeight="28.0" prefWidth="168.0" text="   Situation" textFill="#403f3f">
+                                 <font>
+                                    <Font name="Century Gothic" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: WHITE; -fx-background-radius: 5px;" stylesheets="@../Style/main.css">
+                           <children>
+                              <AnchorPane prefHeight="25.0" prefWidth="20.0" />
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="DOLLAR" size="25" wrappingWidth="23.0" />
+                              <Label fx:id="btn_CallNouveau11" onMouseClicked="#Call_nouveau" prefHeight="28.0" prefWidth="168.0" text="   Paiements" textFill="#403f3f">
+                                 <font>
+                                    <Font name="Century Gothic" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: WHITE; -fx-background-radius: 5px;" stylesheets="@../Style/main.css">
+                           <children>
+                              <AnchorPane prefHeight="25.0" prefWidth="20.0" />
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="FILES_ALT" size="25" wrappingWidth="23.0" />
+                              <Label fx:id="btn_CallNouveau111" onMouseClicked="#Call_nouveau" prefHeight="28.0" prefWidth="168.0" text="   Rapport" textFill="#403f3f">
+                                 <font>
+                                    <Font name="Century Gothic" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow height="0.0" radius="0.0" width="0.0" />
                            </effect>
                         </HBox>
                      </children>
                   </VBox>
                </children>
             </AnchorPane>
-            <StackPane fx:id="contenaire" layoutX="214.0" layoutY="69.0" prefHeight="632.0" prefWidth="790.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="248.0" AnchorPane.topAnchor="69.0" />
-            <AnchorPane layoutX="1011.0" layoutY="-6.0" prefHeight="725.0" prefWidth="241.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <StackPane fx:id="contenaire" layoutX="208.0" layoutY="69.0" prefHeight="650.0" prefWidth="805.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="239.0" AnchorPane.topAnchor="69.0" />
+            <AnchorPane layoutX="1011.0" layoutY="-6.0" prefHeight="725.0" prefWidth="241.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="206.0" layoutY="-2.0" prefHeight="70.0" prefWidth="805.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="241.0" AnchorPane.topAnchor="0.0" />
          </children>
       </AnchorPane>
    </children>

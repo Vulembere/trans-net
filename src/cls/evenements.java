@@ -104,10 +104,10 @@ public class evenements {
     public void SelectDataFor(Button... bt) {
         try {
             for (Button tr : bt) {
-                tr.setStyle("-fx-background-color: #fff;-fx-text-fill: #000000;");
+                tr.setStyle("-fx-background-color: red;-fx-text-fill: white;");
                 tr.setFont(Font.font("System", FontPosture.REGULAR, 13));
             }
-            bt[0].setStyle("-fx-background-color: #6A75CA;-fx-text-fill: #fff;");
+            bt[0].setStyle("-fx-background-color: white;-fx-text-fill: black;");
             bt[0].setFont(Font.font("System", FontWeight.BOLD, 13));
         } catch (Exception e) {
             e.printStackTrace();

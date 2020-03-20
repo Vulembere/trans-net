@@ -29,6 +29,12 @@ public class MainController implements Initializable {
     public static StackPane MainStock;
     @FXML
     private StackPane contenaire;
+    @FXML
+    private Label btn_CallNouveau1;
+    @FXML
+    private Label btn_CallNouveau11;
+    @FXML
+    private Label btn_CallNouveau111;
 
     /**
      * Initializes the controller class.

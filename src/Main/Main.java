@@ -20,7 +20,6 @@ import javafx.stage.StageStyle;
 public class Main extends Application {
 
     public void start(Stage stage) throws Exception {
-//        var.setLink("http://ets-yetu.com/dep/");
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/GUI/Main.fxml"));
             Scene scene = new Scene(root);
@@ -38,7 +37,7 @@ public class Main extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException {
         launch(args);
     }
 

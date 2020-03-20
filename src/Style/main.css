@@ -56,7 +56,10 @@
     -fx-background-color: #9B836A;
 }*/
 /*TextFiledStyles*/
-
+.scrol-pane{
+    -fx-background:#FFF;
+    -fx-border-color: #FFF;
+}
 .textfiled{
     -fx-background-color:white;
     -fx-border-style:solid ;
@@ -179,7 +182,7 @@ a{
 /*tab*/
 .tab
 {
-     font-size: 10px;	
+    font-size: 10px;	
     -fx-pref-width: 105;
     -fx-pref-height: 35;
     -fx-background-color:  #2a4f64;

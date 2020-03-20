@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,11 +10,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="panelsControllers.AssurencesController">
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="panelsControllers.DocumentsController">
    <children>
-      <AnchorPane layoutX="21.0" layoutY="45.0" prefHeight="438.0" prefWidth="296.0" style="-fx-background-color: white; -fx-background-radius: 10px;" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="45.0">
+      <AnchorPane layoutX="14.0" layoutY="36.0" prefHeight="438.0" prefWidth="296.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
          <children>
-            <VBox layoutX="53.0" layoutY="-3.0" prefHeight="137.0" prefWidth="241.0" spacing="20.0" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="26.0">
+            <VBox layoutX="28.0" layoutY="23.0" prefHeight="137.0" prefWidth="241.0" spacing="20.0" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="26.0">
                <children>
                   <AnchorPane prefHeight="32.0" prefWidth="227.0" style="-fx-border-color: #b6b6b6; -fx-border-width: 0.25px;">
                      <children>
@@ -45,35 +43,23 @@
                   <Font name="Century Gothic" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="28.0" layoutY="171.0" onAction="#delete" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #F44336;" text="Supprimer" textFill="WHITE">
-               <font>
-                  <Font name="Century Gothic" size="13.0" />
-               </font>
-            </JFXButton>
-            <AnchorPane layoutX="26.0" layoutY="236.0" prefHeight="32.0" prefWidth="241.0">
-               <children>
-                  <FontAwesomeIconView fx:id="font" layoutX="8.0" layoutY="22.857142448425293" size="20" visible="false" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="2.0" />
-                  <Label fx:id="labInfos" layoutX="36.0" layoutY="5.0" prefHeight="17.0" prefWidth="201.0" text="Label" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-               </children>
-            </AnchorPane>
-            <Label fx:id="txtCode" layoutX="26.0" layoutY="6.0" prefHeight="17.0" prefWidth="54.0" text="0" textFill="WHITE" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="329.0" layoutY="45.0" prefHeight="438.0" prefWidth="455.0" style="-fx-background-color: white; -fx-background-radius: 10px;" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="329.0" AnchorPane.topAnchor="45.0">
+      <AnchorPane layoutX="331.0" layoutY="36.0" prefHeight="438.0" prefWidth="450.0" style="-fx-background-color: white; -fx-background-radius: 10px;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="331.0" AnchorPane.topAnchor="36.0">
          <children>
-            <ScrollPane layoutX="-5.0" layoutY="8.0" prefHeight="423.0" prefWidth="453.0" style="-fx-background-color: white; -fx-border-color: white;" styleClass="scrol-pane" stylesheets="@../Style/main.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="8.0">
+            <ScrollPane layoutX="-5.0" layoutY="8.0" prefHeight="423.0" prefWidth="448.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="8.0">
                <content>
-                  <VBox fx:id="vb" prefHeight="423.0" prefWidth="437.0" style="-fx-background-color: white;" />
+                  <VBox fx:id="vb" prefHeight="423.0" prefWidth="431.0" style="-fx-background-color: white; -fx-border-color: white;" />
                </content>
             </ScrollPane>
          </children>
       </AnchorPane>
-      <Text fx:id="txtDetail" fill="#bdbdbf" layoutX="42.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assurance" wrappingWidth="253.0000024139881">
+      <Text fill="#bdbdbf" layoutX="19.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informations sur le documents" wrappingWidth="286.0000024139881">
          <font>
-            <Font name="Century Gothic Bold" size="26.0" />
+            <Font name="Century Gothic Bold" size="15.0" />
          </font>
       </Text>
-      <Text fill="#bdbdbf" layoutX="331.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste" wrappingWidth="286.0000024139881">
+      <Text fill="#bdbdbf" layoutX="331.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Documents" wrappingWidth="286.0000024139881">
          <font>
             <Font name="Century Gothic Bold" size="15.0" />
          </font>
